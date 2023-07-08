@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Turret+Road:wght@400;700&display=swap');
 
 .font-schoolbell {
   font-family: 'Schoolbell', cursive;
@@ -7,6 +8,10 @@
 
 .font-fredoka {
   font-family: 'Fredoka', sans-serif;
+}
+
+.font-turret {
+  font-family: 'Turret Road', sans-serif;
 }
 
 .animate-wiggle {

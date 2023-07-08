@@ -1,14 +1,15 @@
 import { useRef, useState } from "preact/hooks";
+import { useSignal } from "@preact/signals";
 
 export default function Subscribe() {
   const input = useRef(null);
-  const [subscribed, setSubscribed] = useState(false);
-  const [error, setError] = useState("");
+  const subscribed = useSignal(false);
+  const error = useSignal("");
 
   return (
     <div className="flex flex-col justify-center items-center max-w-screen-md w-full">
       <div className="w-full flex flex-col md:flex-row gap-4">
-        {subscribed
+        {subscribed.value
           ? (
             <p className="bg-emerald-500 text-white font-bold py-2 px-4 rounded w-full">
               Success! Now check your email to confirm your subscription.
@@ -35,16 +36,16 @@ export default function Subscribe() {
                         const subscribe = await subscribeReq.json();
 
                         if (subscribe.error) {
-                          setError("Failed to subscribe");
+                          error.value = "Failed to subscribe";
                         } else {
-                          setSubscribed(true);
-                          setError("");
+                          subscribed.value = true;
+                          error.value = "";
                         }
                       } catch {
-                        setError("Network Error");
+                        error.value = "Network Error";
                       }
                     } else {
-                      setError("No Email Provided");
+                      error.value = "No Email Provided";
                     }
                   }
                 }}
@@ -54,7 +55,7 @@ export default function Subscribe() {
             </>
           )}
       </div>
-      <p className="text-red-600">{error}</p>
+      <p className="pt-4 text-red-600">{error}</p>
     </div>
   );
 }

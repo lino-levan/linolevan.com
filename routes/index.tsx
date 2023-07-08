@@ -4,6 +4,7 @@ import { render } from "gfm";
 import { Head } from "@/components/Head.tsx";
 import { Header } from "@/components/Header.tsx";
 import Pond from "@/islands/Pond.tsx";
+import Psst from "@/islands/minigames/Psst.tsx";
 
 export const handler: Handlers<string> = {
   async GET(_, ctx) {
@@ -20,6 +21,7 @@ export default function Home(props: PageProps<string>) {
     <>
       <Head />
       <Header />
+      <Psst />
       <div class="min-h-screen w-screen flex flex-col">
         <Pond />
         <div class="bg-teal-100 pt-8 flex-grow font-fredoka flex flex-col items-center">

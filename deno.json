@@ -19,7 +19,7 @@
     "remove-markdown": "https://esm.sh/remove-markdown@0.5.0",
     "$std/": "https://deno.land/std@0.192.0/",
     "$icons/": "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/",
-    "gfm": "https://deno.land/x/gfm@0.2.3/mod.ts"
+    "gfm": "https://deno.land/x/gfm@0.2.5/mod.ts"
   },
   "compilerOptions": {
     "jsx": "react-jsx",
