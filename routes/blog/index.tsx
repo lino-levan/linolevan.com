@@ -23,6 +23,8 @@ export default function Blog(props: PageProps<Posts>) {
       <div class="font-fredoka flex flex-col gap-8 items-center pt-28 px-4 w-screen">
         {Array.from(props.data.entries()).filter(([_, post]) =>
           filteredTag ? post.tags?.includes(filteredTag) : true
+        ).sort(([_sA, a], [_sB, b]) =>
+          b.publishDate.getTime() - a.publishDate.getTime()
         ).map(([slug, post]) => (
           <div class="w-full max-w-screen-sm flex flex-col gap-1">
             <a href={`/blog${slug}`}>
