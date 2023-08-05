@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "preact/hooks";
 
+let speed = 130;
 let frame = 0;
 let dropped = false;
 let water = new Array(250).fill(0).map(() => 0);
@@ -44,7 +45,7 @@ function render(ctx: CanvasRenderingContext2D) {
   ctx.fill();
 
   // handle water droplet
-  const animFrame = frame % 130;
+  const animFrame = frame % speed;
 
   if (animFrame === 0) {
     dropped = false;
@@ -72,8 +73,23 @@ function Pond() {
     if (canvas.current) {
       const ctx = canvas.current.getContext("2d") as CanvasRenderingContext2D;
 
+      document.addEventListener("keyup", (e) => {
+        if (e.key === "ArrowUp") {
+          speed -= 5;
+        } else if (e.key === "ArrowDown") {
+          speed += 5;
+        }
+
+        if (speed < 25) {
+          speed = 25;
+        }
+        console.log(speed);
+      });
+
       const interval = setInterval(() => render(ctx), 1000 / 60);
-      return () => clearInterval(interval);
+      return () => {
+        clearInterval(interval);
+      };
     }
   }, [canvas]);
 

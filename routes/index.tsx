@@ -4,7 +4,7 @@ import { render } from "gfm";
 import { Head } from "@/components/Head.tsx";
 import { Header } from "@/components/Header.tsx";
 import Pond from "@/islands/Pond.tsx";
-import Psst from "@/islands/minigames/Psst.tsx";
+import Psst from "@/islands/secrets/Psst.tsx";
 
 export const handler: Handlers<string> = {
   async GET(_, ctx) {

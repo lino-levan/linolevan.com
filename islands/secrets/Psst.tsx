@@ -29,7 +29,7 @@ const script = [
   "Psst. Hey! Yeah you.",
   "I don't have a lot of time.",
   "I'm trapped here.",
-  "I've left clues around here.",
+  "I've left clues around.",
   "Find them and save me.",
 ];
 
