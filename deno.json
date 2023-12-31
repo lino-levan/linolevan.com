@@ -3,7 +3,7 @@
   "tasks": {
     "start": "deno run --unstable -A --watch=static/,routes/ dev.ts",
     "update": "deno run -A -r https://fresh.deno.dev/update .",
-    "build": "deno run -A dev.ts build",
+    "build": "deno run --unstable -A dev.ts build",
     "preview": "deno run -A main.ts"
   },
   "imports": {
