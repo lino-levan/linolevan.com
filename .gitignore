@@ -5,5 +5,11 @@
 .env.production.local
 .env.local
 
+# node nonsense for extension to work
+node_modules/
+
 # obsidian metadata
 .obsidian
+
+# Fresh build directory
+_fresh/
