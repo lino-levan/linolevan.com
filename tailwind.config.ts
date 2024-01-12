@@ -5,5 +5,5 @@ export default {
   content: [
     "{routes,islands,components}/**/*.{ts,tsx}",
   ],
-  plugins: [TypographyPlugin]
+  plugins: [TypographyPlugin],
 } satisfies Config;

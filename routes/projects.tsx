@@ -28,8 +28,8 @@ const gradients = [
   "from-purple-300 to-purple-100",
   "from-fuchsia-300 to-fuchsia-100",
   "from-pink-300 to-pink-100",
-  "from-rose-300 to-rose-100"
-]
+  "from-rose-300 to-rose-100",
+];
 
 export const handler: Handlers<Project[]> = {
   async GET(_, ctx) {
@@ -48,7 +48,9 @@ export default function Home(props: PageProps<Project[]>) {
       <div class="pt-28 font-fredoka flex flex-col items-center gap-8">
         {props.data.map((project, i) => (
           <div
-            class={`max-w-screen-sm shadow-xl p-8 rounded-lg flex flex-col gap-2 bg-gradient-to-tr ${gradients[i % gradients.length]}`}
+            class={`max-w-screen-sm shadow-xl p-8 rounded-lg flex flex-col gap-2 bg-gradient-to-tr ${
+              gradients[i % gradients.length]
+            }`}
           >
             <a href={project.demo ?? project.github}>
               <img class="rounded-lg shadow-xl" src={project.image} />

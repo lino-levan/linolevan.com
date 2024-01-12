@@ -1,4 +1,5 @@
 import { Handlers } from "$fresh/server.ts";
+import { sendMessage } from "libhook";
 
 export const handler: Handlers = {
   async GET(req) {
@@ -36,6 +37,11 @@ export const handler: Handlers = {
           },
         );
       }
+
+      await sendMessage({
+        username: "linolevan.com",
+        content: `New subscriber: ${email}`,
+      });
 
       // happy days
       return new Response(JSON.stringify({ error: "" }), {

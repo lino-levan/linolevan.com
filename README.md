@@ -5,7 +5,10 @@ slow nonsense that was Next.js.
 
 ### Usage
 
-It's written in [Deno](https://deno.land), so it's as simple as
+First, set up a discord webhook and put the url in `.env` as `WEBHOOK_URL`.
+
+Now, since the site is written in [Deno](https://deno.land), so it's as simple
+as
 
 ```
 deno task start
