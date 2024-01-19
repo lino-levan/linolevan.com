@@ -1,6 +1,7 @@
 import { Handlers, PageProps } from "$fresh/server.ts";
 import { CSS, render } from "gfm";
 import "prism/prism-typescript?no-check";
+import "prism/prism-rust?no-check";
 
 import { Head } from "@/components/Head.tsx";
 import { Header } from "@/components/Header.tsx";
