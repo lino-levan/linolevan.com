@@ -1,5 +1,3 @@
-import { Handlers, PageProps } from "$fresh/server.ts";
-
 import { Head } from "@/components/Head.tsx";
 import { Header } from "@/components/Header.tsx";
 
@@ -31,7 +29,7 @@ const gradients = [
   "from-rose-300 to-rose-100",
 ];
 
-export default function Home(props: PageProps<Project[]>) {
+export default function Home() {
   const projects: Project[] = JSON.parse(
     Deno.readTextFileSync("./static/projects.json"),
   );
