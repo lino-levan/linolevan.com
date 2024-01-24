@@ -1,4 +1,3 @@
-import { Handlers, PageProps } from "$fresh/server.ts";
 import { render } from "gfm";
 
 import { Head } from "@/components/Head.tsx";
@@ -6,17 +5,13 @@ import { Header } from "@/components/Header.tsx";
 import Pond from "@/islands/Pond.tsx";
 import Psst from "@/islands/secrets/Psst.tsx";
 
-export const handler: Handlers<string> = {
-  async GET(_, ctx) {
-    const req = await fetch(
-      "https://raw.githubusercontent.com/lino-levan/lino-levan/main/README.md",
-    );
-    const res = await req.text();
-    return ctx.render(res.split("Hi there\n")[1].split("###")[0]);
-  },
-};
+export default async function Home() {
+  const req = await fetch(
+    "https://raw.githubusercontent.com/lino-levan/lino-levan/main/README.md",
+  );
+  const res = await req.text();
+  const text = res.split("Hi there\n")[1].split("###")[0];
 
-export default function Home(props: PageProps<string>) {
   return (
     <>
       <Head />
@@ -31,7 +26,7 @@ export default function Home(props: PageProps<string>) {
           </div>
           <div
             class="prose lg:prose-xl px-4"
-            dangerouslySetInnerHTML={{ __html: render(props.data) }}
+            dangerouslySetInnerHTML={{ __html: render(text) }}
           />
         </div>
       </div>

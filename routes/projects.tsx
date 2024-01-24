@@ -31,22 +31,17 @@ const gradients = [
   "from-rose-300 to-rose-100",
 ];
 
-export const handler: Handlers<Project[]> = {
-  async GET(_, ctx) {
-    const projects = JSON.parse(
-      await Deno.readTextFileSync("./static/projects.json"),
-    );
-    return ctx.render(projects);
-  },
-};
-
 export default function Home(props: PageProps<Project[]>) {
+  const projects: Project[] = JSON.parse(
+    Deno.readTextFileSync("./static/projects.json"),
+  );
+
   return (
     <>
       <Head title="Projects | Lino Le Van" />
       <Header />
       <div class="pt-28 font-fredoka flex flex-col items-center gap-8">
-        {props.data.map((project, i) => (
+        {projects.map((project, i) => (
           <div
             class={`max-w-screen-sm shadow-xl p-8 rounded-lg flex flex-col gap-2 bg-gradient-to-tr ${
               gradients[i % gradients.length]
