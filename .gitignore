@@ -13,3 +13,6 @@ node_modules/
 
 # Fresh build directory
 _fresh/
+
+# Mac nonsense
+.DS_Store
