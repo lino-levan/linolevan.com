@@ -120,7 +120,7 @@ std.print(x);
 This gets compiled to:
 
 ```javascript
-const x = Math.random() < 0.5 ? 0 : 1;
+console.log(Math.random() < 0.5 ? 0 : 1);
 ```
 
 Okay I give up. If I turn off a whole bunch of optimizations, I can get it to
