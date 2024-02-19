@@ -1,5 +1,51 @@
 [
   {
+    "name": "Haltstar",
+    "description": "...",
+    "image": "/screenshots/haltstar.png",
+    "demo": "https://haltstar.com/"
+  },
+  {
+    "name": "Doastral.com",
+    "description": "Next generation website QA",
+    "image": "/screenshots/doastral.png",
+    "demo": "https://doastral.com/"
+  },
+  {
+    "name": "Risposta",
+    "description": "A free, open-source Piazza alternative",
+    "image": "/screenshots/risposta.png",
+    "demo": "https://risposta.org/",
+    "github": "https://github.com/lino-levan/risposta.org"
+  },
+  {
+    "name": "Astral",
+    "description": "Browser automation for Deno fans",
+    "image": "/screenshots/astral.png",
+    "demo": "https://astral.deno.dev/",
+    "github": "https://github.com/lino-levan/astral"
+  },
+  {
+    "name": "Lino Cloud Services",
+    "description": "A really simple set of cloud service offerings",
+    "image": "/screenshots/lcs.png",
+    "demo": "https://cloud.linolevan.com/"
+  },
+  {
+    "name": "Flipbit",
+    "description": "E2E encrypted chat with certain privacy guarantees",
+    "image": "/screenshots/flipbit.png",
+    "demo": "https://dm.linolevan.com/",
+    "github": "https://github.com/lino-levan/flipbit"
+  },
+  {
+    "name": "Chat Speedrun",
+    "description": "Any% chat speedrun (PB is <1:30:00)",
+    "image": "/screenshots/chat_speedrun.png",
+    "demo": "https://chat.linolevan.com/",
+    "github": "https://github.com/lino-levan/chat-speedrun"
+  },
+  {
     "name": "Invisible Ink",
     "description": "Need to send a one time message to someone? Boy have you found the right place",
     "image": "/screenshots/invisible-ink.png",
