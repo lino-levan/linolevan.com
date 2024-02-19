@@ -42,10 +42,10 @@
     "github": "https://github.com/cookiedb/CookieDB"
   },
   {
-    "name": "Canicli.com",
+    "name": "Can I CLI?",
     "description": "A site to check if your cli tool name has already been taken.",
     "image": "/screenshots/canicli.png",
-    "demo": "https://canicli.com"
+    "demo": "https://canicli.deno.dev/"
   },
   {
     "name": "Smuck.io",
