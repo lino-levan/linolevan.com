@@ -14,7 +14,7 @@ export default function Friendless() {
           one of your changes turns out to make the game more fun, hit me up and
           I'm happy to make it official (or an official variation). Also, if
           you're one of the people asking for a download of the cards,{" "}
-          <a class="text-blue-500 hover:underline" href="/friendless.zip">
+          <a class="text-blue-500 hover:underline" href="/friendless/cards.zip">
             here you go
           </a>.
         </p>
@@ -46,7 +46,15 @@ export default function Friendless() {
           <br />
           Hand count, cards in play, and the discard pile is (and must be)
           public knowledge. You aren't allowed to put cards in your sleeves
-          (*cough* Anna *cough*).
+          (*cough* Anna *cough*).<br />
+          <br />
+          If turns are taking too long, you should implement a 30 second speed
+          timer. Your turn ends when you click the timer button or when the
+          timer expires. To help with this, I've created a{" "}
+          <a class="text-blue-500 hover:underline" href="/friendless/timer">
+            friendless speed timer
+          </a>{" "}
+          for you. You're welcome.
         </p>
         <h2 class="text-2xl font-bold text-emerald-500">Setup</h2>
         <p>

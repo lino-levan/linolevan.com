@@ -8,11 +8,13 @@ import * as $api_subscribe from "./routes/api/subscribe.ts";
 import * as $blog_slug_ from "./routes/blog/[slug].tsx";
 import * as $blog_index from "./routes/blog/index.tsx";
 import * as $friendless_index from "./routes/friendless/index.tsx";
+import * as $friendless_timer from "./routes/friendless/timer.tsx";
 import * as $index from "./routes/index.tsx";
 import * as $projects from "./routes/projects.tsx";
 import * as $Comments from "./islands/Comments.tsx";
 import * as $Pond from "./islands/Pond.tsx";
 import * as $Subscribe from "./islands/Subscribe.tsx";
+import * as $Timer from "./islands/Timer.tsx";
 import * as $secrets_Psst from "./islands/secrets/Psst.tsx";
 import { type Manifest } from "$fresh/server.ts";
 
@@ -24,6 +26,7 @@ const manifest = {
     "./routes/blog/[slug].tsx": $blog_slug_,
     "./routes/blog/index.tsx": $blog_index,
     "./routes/friendless/index.tsx": $friendless_index,
+    "./routes/friendless/timer.tsx": $friendless_timer,
     "./routes/index.tsx": $index,
     "./routes/projects.tsx": $projects,
   },
@@ -31,6 +34,7 @@ const manifest = {
     "./islands/Comments.tsx": $Comments,
     "./islands/Pond.tsx": $Pond,
     "./islands/Subscribe.tsx": $Subscribe,
+    "./islands/Timer.tsx": $Timer,
     "./islands/secrets/Psst.tsx": $secrets_Psst,
   },
   baseUrl: import.meta.url,
