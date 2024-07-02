@@ -7,11 +7,11 @@ export default function Subscribe() {
   const error = useSignal("");
 
   return (
-    <div className="flex flex-col justify-center items-center max-w-screen-md w-full">
-      <div className="w-full flex flex-col md:flex-row gap-4">
+    <div class="flex flex-col justify-center items-center max-w-screen-md w-full">
+      <div class="w-full flex flex-col md:flex-row gap-4">
         {subscribed.value
           ? (
-            <p className="bg-emerald-500 text-white font-bold py-2 px-4 rounded w-full">
+            <p class="bg-emerald-500 text-white font-bold py-2 px-4 rounded w-full">
               Success! Now check your email to confirm your subscription.
             </p>
           )
@@ -19,12 +19,12 @@ export default function Subscribe() {
             <>
               <input
                 ref={input}
-                className="border p-2 rounded w-full font-fredoka"
+                class="border p-2 rounded w-full font-fredoka"
                 placeholder="example@example.com"
               >
               </input>
               <button
-                className="bg-emerald-500 hover:bg-emerald-700 text-white font-bold py-2 px-4 rounded w-full font-fredoka"
+                class="bg-emerald-500 hover:bg-emerald-700 text-white font-bold py-2 px-4 rounded w-full font-fredoka"
                 onClick={async () => {
                   if (input.current) {
                     const cur = input.current as HTMLInputElement;
@@ -55,7 +55,7 @@ export default function Subscribe() {
             </>
           )}
       </div>
-      <p className="pt-4 text-red-600">{error}</p>
+      <p class="pt-4 text-red-600">{error}</p>
     </div>
   );
 }

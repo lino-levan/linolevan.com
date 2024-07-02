@@ -45,15 +45,15 @@ export default async function Home() {
       <div class="min-h-screen w-screen flex flex-col">
         <Pond />
         <div class="bg-teal-100 pt-8 flex-grow font-fredoka flex flex-col items-center">
-          <div className="flex prose lg:prose-xl">
-            <h1 className="animate-wiggle pr-4">👋</h1>
+          <div class="flex prose lg:prose-xl">
+            <h1 class="animate-wiggle pr-4">👋</h1>
             <h1 class="w-full">Hi there</h1>
           </div>
           <div
             class="prose lg:prose-xl px-4"
             dangerouslySetInnerHTML={{ __html: render(text) }}
           />
-          <div className="py-8 prose lg:prose-xl">
+          <div class="py-8 prose lg:prose-xl">
             <h2>Recent Thoughts</h2>
           </div>
           <div class="flex flex-col gap-2 max-w-screen-md w-full pb-4">

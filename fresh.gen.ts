@@ -7,6 +7,7 @@ import * as $api_comment from "./routes/api/comment.ts";
 import * as $api_subscribe from "./routes/api/subscribe.ts";
 import * as $blog_slug_ from "./routes/blog/[slug].tsx";
 import * as $blog_index from "./routes/blog/index.tsx";
+import * as $friendless_index from "./routes/friendless/index.tsx";
 import * as $index from "./routes/index.tsx";
 import * as $projects from "./routes/projects.tsx";
 import * as $Comments from "./islands/Comments.tsx";
@@ -22,6 +23,7 @@ const manifest = {
     "./routes/api/subscribe.ts": $api_subscribe,
     "./routes/blog/[slug].tsx": $blog_slug_,
     "./routes/blog/index.tsx": $blog_index,
+    "./routes/friendless/index.tsx": $friendless_index,
     "./routes/index.tsx": $index,
     "./routes/projects.tsx": $projects,
   },
