@@ -83,7 +83,9 @@ export default function Friendless() {
           "Floor is Lava"<br />
           5. You don't have to retain Jaeden to use an ability twice.<br />
           6. "No player" includes the player who has Sean in play.<br />
-          7. Sean is not a shield.<br />
+          7. Sean is not a shield. Joe is not a shield.<br />
+          8. You cannot trap cards you played.<br />
+          9. You cannot necromancy or necromany a necromancy or necromany.<br />
           <br />
           Okay so if you're this far down you still haven't found a rule that
           applies in your situation. Great! You're probably playing the game
